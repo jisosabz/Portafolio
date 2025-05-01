@@ -1,160 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iván's Portfolio</title>
-    <link rel="stylesheet" href="estilos.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- header section -->
-    <header class="header">
-      <input type="checkbox" class="header__checkbox" id="open-menu" />
-      <label for="open-menu" class="header__open-nav-button" role="button"
-        >=</label
-      >
-      <div class="header__logo-container">
-        <img src="multimedia/logo.png" class="header__logo" />
-      </div>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#">Sobre Iván</a></li>
-          <li class="header__nav-item"><a href="#">Portfolio</a></li>
-          <li class="header__nav-item"><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- header section -->
 
-    <!-- profile section -->
-    <main class="profile">
-      <div class="profile__wrapper">
-        <div class="profile__img-container">
-          <img src="multimedia/profile.jpeg" class="profile__img" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iván Sosa | Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- Navbar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #003366;">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Iván Sosa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
         </div>
-        <div class="profile__data-container">
-          <div class="profile__data">
-            <div class="profile__description">
-              <h1>¿Quién es Iván?</h1>
-              <p>
-                Soy profesor de matemáticas con experiencia en aritmética,
-                álgebra, geometría, trigonometría, cálculo y física. Actualmente
-                estudio Ingeniería en Sistemas Informáticos, y me apasiona el
-                desarrollo web, con el objetivo de graduarme con excelencia.
-              </p>
-              <!-- <div class="profile__skill-container">
-                            <h2>Habilidades</h2>
-                            <ul>
-                                <li class="profile__skill">
-                                    <div class="load-bar">
-                                        <div class="load-bar__bar bar-90">90%</div>
-                                    </div>
-                                    <span class="profile__skill-name">HTML</span>
-                                </li>
-                                <li class="profile__skill">
-                                    <div class="load-bar">
-                                        <div class="load-bar__bar bar-80">80%</div>
-                                    </div>
-                                    <span class="profile__skill-name">CSS</span>
-                                </li>
-                                <li class="profile__skill">
-                                    <div class="load-bar">
-                                        <div class="load-bar__bar bar-0">0%</div>
-                                    </div>
-                                    <span class="profile__skill-name">JavaScript</span>
-                                </li>
-                                <li class="profile__skill">
-                                    <div class="load-bar">
-                                        <div class="load-bar__bar bar-10">10%</div>
-                                    </div>
-                                    <span class="profile__skill-name">Python</span>
-                                </li>
-                                <li class="profile__skill">
-                                    <div class="load-bar">
-                                        <div class="load-bar__bar bar-60">60%</div>
-                                    </div>
-                                    <span class="profile__skill-name">SQL</span>
-                                </li>
-                                <li class="profile__skill">
-                                    <div class="load-bar">
-                                        <div class="load-bar__bar bar-15">15%</div>
-                                    </div>
-                                    <span class="profile__skill-name">Java</span>
-                                </li>
-                                
-                            </ul>
-                        </div> -->
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="py-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-center gap-4">
+      <div class="text-center text-lg-start">
+        <h2 class="fw-bold mb-3 text-accent">¿Quién es Iván?</h2>
+        <p>
+          Soy profesor de matemáticas con experiencia en aritmética, álgebra, geometría, trigonometría, cálculo y
+          física.
+          Actualmente estudio Ingeniería en Sistemas Informáticos y me apasiona el desarrollo web, con el objetivo de
+          graduarme con excelencia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-5 bg-secondary text-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4 text-accent">Portfolio</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card bg-dark text-light border-0 h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Descripción breve del proyecto.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-light border-0 h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2</h5>
+              <p class="card-text">Descripción breve del proyecto.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-light border-0 h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Descripción breve del proyecto.</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <!-- profile section -->
-    <!-- portfolio section -->
-    <section class="portfolio">
-      <h2 class="portfolio__title">Portfolio</h2>
-      <div class="portfolio__project-container">
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">Proyecto</h2>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center text-accent">Contacto</h2>
+      <form class="row g-3 mx-auto" style="max-width: 700px;">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Iván">
         </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">Proyecto</h2>
+        <div class="col-md-6">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellido" placeholder="Sosa">
         </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">Proyecto</h2>
+        <div class="col-12">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="ivan@example.com">
         </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">Proyecto</h2>
+        <div class="col-12">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
         </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">Proyecto</h2>
-        </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">Proyecto</h2>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio section -->
-    <!-- contact section -->
-    <section class="form">
-      <h2 class="form__title">Contacto</h2>
-      <form class="form__form">
-        <div class="form__input-container">
-          <label
-            >Nombre
-            <input type="text" placeholder="Adam" />
-          </label>
-        </div>
-        <div class="form__input-container">
-          <label
-            >Apellido
-            <input type="text" placeholder="Sandler" />
-          </label>
-        </div>
-        <div class="form__input-container">
-          <label
-            >Email
-            <input type="email" placeholder="AdamSandler@email.com" />
-          </label>
-        </div>
-        <div class="form__input-container">
-          <label
-            >Mensaje
-            <textarea type="text" placeholder="Escriba su mensaje"></textarea>
-          </label>
-        </div>
-        <div class="form__input-container">
-          <input type="submit" />
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-accent px-4">Enviar</button>
         </div>
       </form>
-    </section>
-    <!-- contact section -->
-    <!-- footer -->
-    <footer><strong>Iván Sosa</strong> - Copyrght</footer>
-    <!-- footer -->
-  </body>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4" style="background-color: #001d3d;">
+    <span class="text-white">Iván Sosa – © 2024. Todos los derechos reservados.</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
